@@ -1,0 +1,31 @@
+@mixin set-color($color){
+	border-color: $color;
+	.panel-content {
+		background-color: $color;
+		border-color: $color;
+		font-weight: bold;
+		color:white;
+		font-size: 17px;
+	}
+}
+
+.title{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.border-color1{
+	@include set-color(#FF6699);
+}
+.border-color2{
+	@include set-color(#00FF66);
+}
+.border-color3{
+	@include set-color(#FFFF33);
+}
+.border-color4{
+	@include set-color(#FF9900);
+}
+.border-color5{
+	@include set-color(#0099FF);
+}
